@@ -1,0 +1,37 @@
+<html>
+    <style>
+        body{
+            background-color:cornflowerblue;
+            overflow: scroll;
+        }
+        #main{
+            text-align: center;
+            border:solid black 5px;
+            padding: 10px;
+            margin: 50px;
+            font-size: 32px;
+
+        }
+    </style>
+    <head>
+        <title>Login Page::USERS</title>
+    </head>
+    <body>
+    <form action="./page.html" method="get">
+        <div id="main">
+        <h1>User Login</h1>
+        <input type="text" placeholder="User Id" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        
+        <label name="age">Above 18</label>
+        <input type="radio" name="age">
+        <label name="age">Under 18</label>
+        <input type="radio" name="age"><br><br>
+
+        <label for="">Remember Password</label>
+        <input type="checkbox"><br><br>
+        <input type="submit" value="login">
+        </div>
+    </form>
+    </body>
+</html>

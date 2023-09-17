@@ -1,0 +1,93 @@
+<!-- <script>
+    var n=123,sm=0,r;
+    while(n!=0)
+    {
+        r=parseInt(n%10);
+        sm=parseInt((sm*10)+r);
+        n=parseInt(n/10);
+    }
+    document.write(sm);
+
+</script> -->
+
+<!-- <script>
+    var num=prompt('enter a value');
+    var f=1;
+
+    for(var i=1;i<=num;i++)
+    {
+        f=f*i
+    }
+    alert(f)
+
+</script> -->
+
+<!-- <script>
+    var hbd=prompt('enter the age')
+
+for(var i=1;i<=hbd;i++)
+{
+    document.write('Happy Birthday'+"<br>")
+}
+</script> -->
+<!-- 
+<html>
+    <button onclick="img1()">image1</button>
+    <button onclick="img2()">image2</button>
+    <button onclick="img3()">image3</button>
+    <img src="" id="btn">
+</html> 
+
+    function img1()
+    {
+        document.getElementById("btn").src="img01.jpg"
+    }
+</script> -->
+
+<!-- <script>
+    var n=prompt("enter a number");
+    var count=0;
+     for(var i=1;i<=n;i++)
+     {
+       if(n%i==0)
+       {
+        count++
+       }
+     }
+     if(count==2)
+     {
+        document.write("prime no.")
+     }
+
+     else
+    {
+        document.write("Not prime no.")
+
+    }
+
+</script> -->
+
+<script>
+    var a1=[[1,2,3],[4,5,6],[7,8,9]];
+    var a2=[[4,5,6],[7,8,9],[10,11,12]];
+    var sm=[[0,0,0],[0,0,0],[0,0,0]];
+
+    for(var i=0;i<3;i++)
+    {
+        for(var j=0;j<3;j++)
+        {
+            for(var k=0;k<3;k++)
+            {
+                sm[i][j]=sm[i][j]+a1[i][k]*a2[k][j];
+            }
+        }
+    }
+    for(var i=0;i<3;i++)
+    {
+        for(var j=0;j<3;j++)
+        {
+            document.writeln(sm[i][j]);
+        }
+        document.write("<br>")
+    }
+</script>

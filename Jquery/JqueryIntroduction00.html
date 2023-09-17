@@ -1,0 +1,40 @@
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    
+    $("h1").click(function(){
+        $(this).hide()
+    })
+
+    $("#btn1").click(function(){
+        $("#p1").hide()
+    })
+
+    $("#btn2").click(function(){
+        $("#p2").hide()
+    })
+
+})
+</script>
+
+<h1 style="background-color: teal;color: white;">Hello World!!</h1>
+<p style="background-color: brown;color: white;font-size: 32px; font-weight: bold;" id="p1">
+    Paragraph 1
+</p>
+
+<p style="background-color: olive;color: white;font-size: 32px; font-weight: bold;" id="p2">
+    Paragraph 2
+</p>
+
+<button id="btn1">
+    Click1
+</button>
+<button id="btn2">
+    Click2
+</button>
+
+
+
+

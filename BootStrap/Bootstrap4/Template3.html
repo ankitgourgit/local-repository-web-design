@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Template Demo </title>
+<link href="css/bootstrap.min.css"  
+              rel="stylesheet">
+<script src="js/jquery-3.6.0.min.js"></script>        
+<script src="js/bootstrap.js"></script>        
+<style>
+    #header
+    {
+        height: 150px;
+        background: brown;
+    }
+     #menu
+    {
+        height: 40px;
+        background: gray;
+    }
+     #content1
+    {
+        margin-top:-20px;
+        height: 440px;
+        background: #eacdc2;
+    }
+     #content2
+    {
+        margin-top:-20px;
+        height: 440px;
+        background:#dad6a9;
+    }
+     #footer
+    {
+        height: 30px;
+        background: gray;
+    }
+</style>
+    </head>
+    <body>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12" id="header">
+            <img src="logo1.jpeg"
+class="img img-responsive"
+ style="width:120px; height:100px;
+ padding-top:30px; margin-left:40px;">
+        </div>
+     </div>
+<div class="row">
+<nav class="navbar navbar-inverse">
+  <a href="#" class="navbar-brand">
+              Educational Site
+   </a>
+<button type="button" data-toggle="collapse"
+        data-target="#mymenu"
+class="navbar-toggle">
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>    
+  </button>       
+    <div class="collapse navbar-collapse"
+         id="mymenu">
+     <ul class="nav navbar-nav">
+         <li><a href="#">Menu1</a></li>
+         <li><a href="#">Menu2</a></li>
+         <li><a href="#">Menu3</a></li>
+     </ul>                         
+    </div>
+ </nav>
+</div>            
+    <div class="row">
+    <div class="col-md-4" id="content1">
+<form>
+  <div class="form-group">
+    <label for="emailid">Email Id*</label>
+    <input type="email" 
+ class="form-control" id="emailid" required>
+  </div>
+<div class="form-group">
+    <label for="pwd">Password*</label>
+    <input type="password" 
+ class="form-control" id="pwd" required>
+  </div>    
+ <button type="submit" class="btn btn-info">
+        Login
+    </button>  
+</form>
+    
+    </div>
+  <div class="col-md-8" id="content2">
+<marquee direction="up"
+style="height:440px" onmouseover="stop()"
+ onmouseout="start()">      
+  <p>
+Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
+Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.          
+Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
+Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.          
+Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
+Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.          
+Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
+Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.          
+  </p>  
+      </marquee>
+  </div>    
+    </div> 
+    <div class="row">
+    <div class="col-md-12" id="footer">
+            Footer Section
+        </div>
+    </div>        
+        </div>
+
+        
+        
+    </body>
+</html>

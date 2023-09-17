@@ -1,0 +1,109 @@
+body
+{
+   margin:0;
+}
+
+.vertical ul
+{
+    background-color:chocolate;
+    width: 15%;
+    position: fixed;
+    left:0;
+    top: 65;
+    padding: 0px;
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+
+.vertical ul li
+{
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.vertical li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+
+.vertical li a:hover
+{
+    background-color: white;
+    color:chocolate;
+}
+
+
+
+
+.horizontal ul
+{
+    background-color:cornflowerblue;
+    list-style-type: none;
+    padding: 0px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+
+.horizontal ul li
+{
+    float: left;
+    border-right: 1px solid white;
+}
+
+.horizontal li a
+{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+.horizontal li a:hover 
+{
+    background-color: white;
+    color:cornflowerblue;
+}
+
+
+
+
+.active
+{
+    background-color:darkgreen;
+}
+
+.content
+{
+    margin-left: 20%;
+    padding:70px;
+}
+
+.foot
+{
+    background-color:cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 10px; 
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+

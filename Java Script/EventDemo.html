@@ -1,0 +1,56 @@
+<input type="text" placeholder="Enter the name" style="font-size: 32px; font-weight: bold;"onfocus="onFocus(this)"  ><br>
+<input type="text" placeholder="Enter Age" style="font-size: 32px; font-weight: bold;"  autofocus><br>
+<input type="text" placeholder="Enter Year" style="font-size: 32px; font-weight: bold;" onchange="onChange(this)"><br>
+
+
+<h1 style="background-color: teal;color:white" onclick="this.innerHTML='Hello Guys!!'">Click Me!!!</h1>
+<h1 style="background-color: teal;color:white" onclick="this.style.backgroundColor='red'">Click Me!</h1><br>
+
+<h2 onclick="changetext(this)">This is heading</h2>
+
+<div  onMouseEnter="onMouseEnter(this)" style="background-color: teal;color: black;" onMouseOut="onMouseOut(this)">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tempore praesentium numquam porro ipsum dignissimos. Nihil doloribus repudiandae iure vel dolorem, minima assumenda rerum tenetur? Nisi laborum incidunt illum natus?
+</div>
+
+
+<script>
+    function changetext(obj)
+    {
+        obj.style.backgroundColor="red";
+        obj.style.fontSize='50px';
+        obj.innerHTML="Hii";
+    }
+
+    function onMouseEnter(obj)
+    {
+        obj.style.backgroundColor = 'brown'
+        obj.style.color = 'white'
+        obj.style.border = '5px solid black'
+        obj.style.fontSize = '32px'
+        obj.style.fontWeight = 'bold'
+    }
+    function onMouseOut(obj)
+    {
+        obj.style.backgroundColor = 'green'
+        obj.style.color = 'white'
+        obj.style.border = '5px solid black'
+        obj.style.fontSize = '32px'
+        obj.style.fontWeight = 'bold'
+    }
+
+    function onFocus(obj){
+        obj.style.backgroundColor = 'brown'
+        obj.style.color = 'white'
+        obj.style.border = '5px solid black'
+        obj.style.fontSize = '32px'
+        obj.style.fontWeight = 'bold'
+    }
+    
+    function onChange(obj)
+    {
+        obj.value=obj.value.toUpperCase();
+        obj.style.backgroundColor = 'orange';
+        obj.style.color = 'green';
+    }
+    
+</script>

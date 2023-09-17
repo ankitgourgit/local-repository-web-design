@@ -1,0 +1,24 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+ <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#div1").fadeIn(2000,function(){
+                $(this).css({"background-color":"orange","color":"white","font-size":"32px","font-weight":"bold","paddind":"20px"})
+            }).fadeOut(2000).slideDown(2000,function(){
+                $(this).css({"background-color":"brown","font-size":"32px","font-weight":"bold","color":"white","padding":"20px","border-radius":"10px"})
+            }).slideUp(2000).slideToggle(2000)
+        })
+    })
+    
+ </script>
+
+
+
+<div id="div1" style="display: none;">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, repudiandae neque labore vel rerum impedit. Voluptas, ullam iure amet, sapiente harum possimus natus est unde ad laborum architecto delectus nemo.
+</div>
+
+<button id="btn1">
+    Click
+</button>

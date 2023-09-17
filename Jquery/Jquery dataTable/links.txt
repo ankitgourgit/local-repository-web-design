@@ -1,0 +1,2 @@
+https://datatables.net/examples/basic_init/table_sorting.html
+https://datatables.net/examples/basic_init/hidden_columns.html

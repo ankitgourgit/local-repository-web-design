@@ -1,0 +1,50 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#div1").fadeIn(2000,function(){
+                alert("click1")
+            })
+        })
+
+        $("#btn2").click(function(){
+            $("#div2").fadeOut(2000,function(){
+                alert("click2")
+            })
+        })
+
+        $("#btn3").click(function(){
+            $("#div3").fadeToggle(2000,function(){
+                alert("click3")
+            })
+        })
+    })
+
+</script>
+
+
+<div style="background-color: brown;width:200; height: 200;display: none; color: white;" id="div1">
+    Div 1
+</div>
+<hr>
+
+<div style="background-color: olive;width:200; height: 200;color: white;" id="div2">
+    Div 2
+</div>
+<hr>
+
+<div style="background-color: orange;width:200; height: 200;color: white; display: none;" id="div3">
+    Div 3
+</div>
+<hr>
+
+<button id="btn1">
+    Click1
+</button>
+<button id="btn2">
+    Click2
+</button>
+<button id="btn3">
+    Click3
+</button>

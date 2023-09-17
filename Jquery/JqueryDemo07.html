@@ -1,0 +1,53 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("h1,h2").addClass("test")
+            $("p,div").addClass("test1")
+        })
+
+        $("#btn2").click(function(){
+            $("h1,h2").removeClass("test")
+            $("p,div").removeClass("test1")
+        })
+
+        $("#btn3").click(function () {
+            $("h1,h2").toggleClass("test")
+            $("p,div").toggleClass("test1")
+        })
+
+    })
+</script>
+
+<style>
+    .test
+    {
+        background-color: brown;
+        color: white;
+        border: 5px solid black;
+    }
+    .test1
+    {
+        background-color: brown;
+        color: white;
+        border: 5px solid black;
+        font-size: 32px;
+        font-weight: bold;
+    }
+</style>
+
+
+
+<h1>This is a heading 1</h1>
+<h2>This is a heading 2</h2>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cumque voluptates aliquid quae officia numquam sit minima a asperiores officiis in cupiditate vitae, dolor, ex ullam! Consectetur, facilis corrupti. Odit?
+</p>
+<div>
+    This is a div tag
+</div><br>
+
+<button id="btn1">Add Class</button>
+<button id="btn2">Remove Class</button>
+<button id="btn3">Toggle Class</button>

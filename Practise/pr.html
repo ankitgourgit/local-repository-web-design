@@ -1,0 +1,62 @@
+<!-- <html>
+    <h1 id="demo"></h1>
+</html>
+<script>
+const myNumbers=[1,2,-3,-7,8,12,15]
+
+
+
+const posNumbers=removeNeg(myNumbers,(x)=>x >= 0)
+
+document.getElementById('demo').innerHTML=posNumbers
+
+
+function removeNeg(numbers,callback){
+
+    const myArray=[]
+    for(const x of numbers){
+        if(callback(x)){
+            myArray.push(x);
+        }
+    }
+    return myArray;
+}
+
+</script> -->
+
+
+
+<!-- <html>
+    <body>
+        <h1 id="demo"></h1>
+    </body>
+
+    <script>
+        setTimeout(function() {myFunction('I AM A CALLBACK');},3000)
+
+        function myFunction(value)
+        {
+            document.getElementById('demo').innerHTML=value
+        }
+    </script>
+</html> -->
+
+
+<html>
+    <body>
+        <h1 id="demo"></h1>
+    </body>
+
+    <script>
+        let myPromise= new Promise(function (myResolve,myReject)
+        {
+            setTimeout(function(){myResolve("i am lovingg it");},3000)
+        })
+
+        myPromise.then(function(value){
+            document.getElementById("demo").innerHTML=value;
+        })
+    </script>
+</html>
+
+

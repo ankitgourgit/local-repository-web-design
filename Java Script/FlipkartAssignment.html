@@ -1,0 +1,119 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $("#flip1").click(function(){
+            $("#panel1").slideToggle(2000,function(){
+
+            })
+        })
+
+        $("#flip2").click(function(){
+            $("#panel2").slideToggle(2000,function(){
+
+            })
+        })
+
+        $("#flip3").click(function(){
+            $("#panel3").slideToggle(2000,function(){
+
+            })
+        })
+
+        $("#flip4").click(function(){
+            $("#panel4").slideToggle(2000,function(){
+
+            })
+        })
+    })
+</script>
+
+
+
+<style>
+    body
+    {
+        margin:0;
+    
+    }
+    #heading
+    {
+        background-color:dodgerblue;
+        color:white;
+        display: flex;
+        padding-left:40%;
+        margin: 10px;
+
+    }
+
+    #flip1,#flip2,#flip3,#flip4
+    {
+        background-color:yellow ;
+        color:dodgerblue;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 10px;
+        padding:10px
+    }
+
+    #panel1, #panel2, #panel3, #panel4
+    {
+        background-color:wheat;
+        margin: 10px;
+        font-size: 20px;
+        width: 40%;
+        padding:10px;
+    }
+    
+</style>
+
+
+<div id="heading">
+<img src="./flipkartLogo.png" height="75px" >
+<h1>Flipkart</h1>
+</div>
+
+
+<div id="flip1">
+   <span id="numbering">1</span> Login <img src="./loginIcon.png" height="25px">
+</div>
+<div id="panel1">
+    <span> Name:  <i>Ankit Gour</i></span><br>
+    <span>Phone:   <i>9009123070</span><br>
+    <span>Password:  ********</span><br>
+</div>
+
+
+<div id="flip2">
+  <span id="numbering">2</span>  Delivery Address <img src="./deliveryTruckIcon.webp" height="25px">
+</div>
+<div id="panel2">
+    <span>Enter Address: <i>Vijaynagar, indore</i> </span><br>
+    <span>Pincode: <i>452025 </i> </span>
+</div>
+
+
+<div id="flip3">
+  <span id="numbering">3</span>  Order Summary <img src="./orderSummaryIcon.png" height="25px">
+</div>
+<div id="panel3">
+   <span>order details: <i>1 Macbook Pro</i></span>
+</div>
+
+
+<div id="flip4">
+   <span id="numbering">4</span> Payment Options <img src="./paymentIcon.png" height="25px">
+</div>
+<div id="panel4">
+    <span>Apple pay </span> <br>
+   <span> Gpay</span><br>
+    <span>Debit Card*******</span><br>
+    <span> Credit card******</span>
+</div>
+
+
+
+
+
+

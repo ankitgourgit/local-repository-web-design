@@ -1,0 +1,67 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#flip1").click(function(){
+            $("#panel1").slideDown(2000,function(){
+                $(this).css({"backgroundColor":"olive"})
+            })
+        })
+        $("#flip2").click(function () {
+            $("#panel1").slideUp(2000,function(){
+                alert("Hii")
+            })
+        })
+        $("#flip3").click(function () {
+            $("#panel3").slideToggle(2000,function(){
+                $(this).css({"background-color":"orange"})
+            })
+        })
+    })
+
+
+</script>
+
+
+
+<style>
+    #flip1,#flip2,#flip3
+    {
+        background-color: teal;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #panel1,#panel2,#panel3
+    {
+        background-color:brown;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        border-radius: 10px;
+        display: none;
+    }
+</style>
+
+
+
+<div id="flip1">
+    Click me to slide Down Panel
+</div><br>
+<div id="panel1">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere assumenda quae, accusantium ad tempore laboriosam tenetur, sequi et optio officiis, blanditiis veniam architecto eius deleniti esse repudiandae dolorum voluptatibus corporis.
+</div><br>
+<div id="flip2">
+    Click me to slide Up Panel
+</div><br>
+<div id="flip3">
+    Click me to slide Toggle Panel
+</div><br>
+<div id="panel3">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere assumenda quae, accusantium ad tempore laboriosam tenetur, sequi et optio officiis, blanditiis veniam architecto eius deleniti esse repudiandae dolorum voluptatibus corporis.
+</div>

@@ -1,0 +1,96 @@
+<h1 style="background-color: teal;color: white;" id="msg1">Click me!</h1><hr>
+
+<div style="background-color: teal;color: black;" id="div1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil aliquid dolorum sapiente esse debitis, velit
+    cupiditate repudiandae eius voluptates laudantium dicta eligendi odio repellat modi quis corrupti amet quia!
+</div> <hr>
+<input type="text" placeholder="Enter a FirstName" style="font-size: 32px; font-weight: bold;" id="fname" /><br>
+<input type="text" placeholder="Enter a LastName" style="font-size: 32px; font-weight: bold;" id="lname" /><br>
+
+ <div id="div2">
+    <img  src="../Assignment/Refrigrator.png" height="400px" id="m1"><br>
+   </div> 
+    <textarea id="demo" cols="70" rows="5" style="margin-left:300px"></textarea>
+
+
+
+<script>
+
+function hello()
+{
+    document.write("Ankit"+"<br>");
+}
+ hello();
+
+ var data =function()
+ {
+    document.write("Mohit"+"<br>");
+ }
+ data();
+
+ var add= function(a,b)
+ {
+    var c=a+b;
+    document.write("The Addtion will be:"+c+"<br>");
+ }
+ add(23,24);
+
+ //event listener
+
+ document.getElementById('msg1').addEventListener("click",function(){
+  document.getElementById('msg1').innerHTML="i m clicked"
+ })
+
+document.getElementById('div1').addEventListener("mouseenter",function(){
+    var obj=document.getElementById('div1')
+    obj.style.backgroundColor='blue';
+    obj.style.fontSize="50px";
+    obj.style.border="4px solid black";
+})
+
+document.getElementById('div1').addEventListener('mouseout',function(){
+    var obj=document.getElementById('div1')
+    obj.style.backgroundColor='red';
+    obj.style.fontSize="50px";
+    obj.style.border="4px solid black";
+    obj.style.fontWeight="bold";
+})
+
+document.getElementById('fname').addEventListener('focus',function(){
+    var obj=document.getElementById('fname')
+    obj.style.backgroundColor="brown";
+    obj.style.color = 'white'
+    obj.style.border = '5px solid black'
+    obj.style.fontSize = '32px'
+    obj.style.fontWeight = 'bold'
+})
+
+document.getElementById('fname').addEventListener('change',function(){
+    var obj=document.getElementById('fname')
+    obj.value=obj.value.toUpperCase();
+    obj.style.backgroundColor="orange";
+    obj.style.color = 'green'
+})
+
+document.getElementById('lname').addEventListener('focus',function(){
+    var obj=document.getElementById('lname')
+    obj.style.backgroundColor="brown";
+    obj.style.color = 'white'
+    obj.style.border = '5px solid black'
+    obj.style.fontSize = '32px'
+    obj.style.fontWeight = 'bold'
+})
+
+document.getElementById('lname').addEventListener('change',function(){
+    var obj=document.getElementById('lname')
+    obj.value=obj.value.toUpperCase();
+    obj.style.backgroundColor="orange";
+    obj.style.color = 'green'
+})
+
+document.getElementById('div2').addEventListener("click",function(){
+    var textarea=document.getElementById('demo');
+    textarea.value="refrigtator1";
+})
+ 
+</script>

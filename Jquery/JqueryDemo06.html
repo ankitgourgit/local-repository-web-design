@@ -1,0 +1,53 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("h1").prepend("Hello")
+            $("h1").append("Today?")
+        })
+        $("#btn2").click(function(){
+            $("ol").prepend("<li>Bhopal</li>")
+            $("ol").append("<li>Devas</li>")
+       })
+       $("#btn3").click(function(){
+        alert($("div").text("hiii"))
+       })
+       $("#btn4").click(function () {
+        alert($("div").html("<h1>Hello</h1>"))
+       })
+       $("#btn5").click(function () {
+        $("#name").val("Videh Jaiswal") 
+       })
+
+})
+</script>
+
+<h1>Everyone How are you </h1>
+<button id="btn1">
+    Click 1
+</button>
+<hr>
+
+<ol style="font-size: 32px; font-weight: bold;">
+<li>Indore</li>
+<li>Ujjain</li>
+</ol>
+<button id="btn2">
+    Click 2
+</button><hr>
+
+<div style="font-size: 32px;">
+    Lorem ipsum, dolor sit amet <b>consectetur</b> adipisicing elit. Id <i><u>explicabo totam non ut similique impedit deserunt</u></i> esse fugiat sed ea, possimus vitae accusamus at nam, dolores odit placeat debitis saepe.
+</div>
+<button id="btn3">
+    Click 3
+</button>
+<button id="btn4">
+    Click 4
+</button><hr>
+
+<input type="text" value="Rahul Sharma" style="font-size: 32px; font-weight: bold;" id="name"/>
+<button id="btn5">
+    Click 5
+</button>

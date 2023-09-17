@@ -1,0 +1,35 @@
+ <h1 id="demo">hello this is Ankit</h1>
+<button onclick="changeText()">Try this!!!</button>
+<h1 id="demo1"> </h1>
+<button onclick="fillText()">Button1</button>
+<h1 onclick="inputText(this)">This is heading!</h1>
+<h1 onclick="newValue(this)">The next one!!</h1>
+<input id="demo3" type="text" placeholder="enter a value">
+<script>
+    function changeText()
+    {
+        document.getElementById('demo').innerHTML='Welcome to the change';
+    }
+
+    function fillText()
+    {
+        document.getElementById('demo1').innerHTML="woooow!!!";
+        document.getElementById('demo1').style.backgroundColor="red";
+    }
+
+    function inputText(obj)
+    {
+      obj.style.backgroundColor='blue'
+      obj.style.color='white'
+      obj.style.border='5px solid black'
+    }
+
+    function newValue()
+    {
+      var output=document.getElementById('demo3')
+      output.value="The changed value";
+      output.style.fontSize="15px";
+    }
+
+
+</script>
